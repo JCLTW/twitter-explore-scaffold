@@ -1,9 +1,33 @@
 .container {
-  display: flex;
   justify-content: center;
-}
+  align-items: center;
+  height: 80vh;
+  .form-pannel {
+    flex-direction: column;
+    border: solid 1px $gray-dark;
+    border-radius: $border-radius-base;
+    padding: $form-pannel-padding;
 
-.form-pannel {
-  display: flex;
-  flex-direction: column;
+    input {
+      background-color: $body-bg;
+      color: $gray-light;
+      font-size: $font-size-base;
+      border: none;
+      border-bottom: solid 1px $gray-dark;
+      padding-bottom: $form-row-space;
+    }
+    h2 {
+      padding: $form-titile-padding;
+    }
+
+    .btn-primary {
+      @include btn-variant($primary-color, $body-bg);
+    }
+    .btn-secondary {
+      @include btn-variant($white, $primary-color);
+    }
+    * {
+      margin-bottom: $form-row-space;
+    }
+  }
 }

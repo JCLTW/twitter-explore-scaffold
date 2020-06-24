@@ -10,4 +10,8 @@
   border-radius: $button-radius;
   color: $color;
   background-color: $bg-color;
+  text-align: center;
+  &:hover {
+    background-color: darken($bg-color, 10%);
+  }
 }
