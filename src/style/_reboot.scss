@@ -18,8 +18,12 @@ body {
   box-sizing: border-box;
 }
 
+nav {
+  display: flex;
+}
 ul,
 ol {
+  display: flex;
   list-style-type: none;
   margin: 0;
   padding: 0;

@@ -1,4 +1,18 @@
 .header {
   display: flex;
   justify-content: space-between;
+  padding: $header-padding-y $header-padding-x;
+  border-bottom: solid 1px $gray-dark;
+  nav {
+    ul {
+      align-items: center;
+      .btn-primary {
+        @include btn-variant($primary-color, $body-bg);
+      }
+      .btn-secondary {
+        @include btn-variant($white, $primary-color);
+        margin-left: 5px;
+      }
+    }
+  }
 }

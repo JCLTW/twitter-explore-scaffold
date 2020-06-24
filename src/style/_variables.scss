@@ -16,3 +16,10 @@ $heading-color: $white !default;
 $link-color: $gray !default;
 $link-hover-color: darken($link-color, 15%) !default;
 $border-color: rgb(61, 84, 102);
+
+$header-padding-y: 20px;
+$header-padding-x: 40px;
+$button-padding-y: 5px;
+$button-padding-x: 40px;
+$button-font-size: 14px;
+$button-radius: 40px;
