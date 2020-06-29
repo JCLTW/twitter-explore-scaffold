@@ -8,6 +8,7 @@
     border-radius: $border-radius-base;
     padding: $form-pannel-padding;
 
+    min-width: $form-pannel-min-width;
     input {
       background-color: $body-bg;
       color: $gray-light;
@@ -26,7 +27,7 @@
     .btn-secondary {
       @include btn-variant($white, $primary-color);
     }
-    * {
+    .form-row {
       margin-bottom: $form-row-space;
     }
   }
